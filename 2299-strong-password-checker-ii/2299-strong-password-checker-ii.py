@@ -2,11 +2,7 @@ class Solution:
     def strongPasswordCheckerII(self, password: str) -> bool:
         x = "!@#$%^&*()-+"
         p = password
-        m = 0
-        d = 0
-        s = 0
-        u = 0
-        l = 0
+        m,d,s,u,l = 0,0,0,0,0
         for j in range(len(p)):
             if (j < len(p)-1) and (p[j] == p[j+1]):
                 m+=1
