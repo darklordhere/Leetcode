@@ -8,7 +8,6 @@ class Solution:
         for i in range(2,len(l)):
             if l[i] == l[i-1] == l[i-2]:
                 m.append(l[i])
-                
         if m == []:
             return ""
         return (str((max(m)))*3)
