@@ -1,7 +1,6 @@
 class Solution:
     def areNumbersAscending(self, s: str) -> bool:
-        x = s.split(' ')
-        l = []
+        x , l = s.split(' ') , []
         for i in x:
             if i.isdigit():
                 l.append(int(i))
