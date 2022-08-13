@@ -6,7 +6,6 @@ class Solution:
                 r += i
             else:
                 r += rw
-        x = r.split()
         return len(set(map(int, r.split())))
     
     
