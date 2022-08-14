@@ -9,7 +9,6 @@ class Solution:
                     c.append(i[1])
                 if ruleKey == "name":
                     n.append(i[2])
-        print(t)
         r = []
         if ruleKey == "type":
             l = t
@@ -24,9 +23,8 @@ class Solution:
                 r.append(c[k])
             if ruleKey == "name":
                 r.append(n[k])
-        print(r)
         return (r.count(ruleValue))
-                    
+
                     
                     
                     
