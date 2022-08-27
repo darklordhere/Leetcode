@@ -1,7 +1,6 @@
 class Solution:
     def intersection(self, n: List[List[int]]) -> List[int]:
-        l = []
-        x = []
+        l,x = [] , []
         for i in n:
             for j in i:
                 if j not in l:
