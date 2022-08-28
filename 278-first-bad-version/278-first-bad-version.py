@@ -6,12 +6,8 @@ class Solution:
         x,y = 1 , n
         while x <= y:
             m = (x+y)//2
-            if m == 0:
-                return 1
-            if isBadVersion(m) == False:
-                x = m+1
-            else:
-                y = m-1
+            if isBadVersion(m) == False: x = m+1
+            else: y = m-1
         return x
         
                 
