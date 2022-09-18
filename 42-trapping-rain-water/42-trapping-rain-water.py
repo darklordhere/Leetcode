@@ -1,6 +1,6 @@
 class Solution:
     def trap(self, h: List[int]) -> int:
-        lh= len(h) # initialising length of array
+        lh= len(h) # storing length of array
         # initialising list for updation 
         x , mlx , mrx = [0]*lh , [0]*lh , [0]*lh
         # To find max from left and right we initialise mrx , mlx
