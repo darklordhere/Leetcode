@@ -1,16 +1,10 @@
 class Solution:
-    def breakPalindrome(self, palindrome: str) -> str:
-        if len(palindrome) == 1:
-            return ''
-
-        n = len(palindrome)
-        letters = list(palindrome)
-
+    def breakPalindrome(self, p: str) -> str:
+        if len(p) == 1: return ''
+        n = len(p) ; l = list(p)
         for i in range(n // 2):
-            if letters[i] > 'a':
-                letters[i] = 'a'
+            if l[i] > 'a':
+                l[i] = 'a'
                 break
-        else:
-            letters[-1] = 'b'
-
-        return ''.join(letters)
+        else: l[-1] = 'b'
+        return ''.join(l)
