@@ -12,7 +12,6 @@ class Solution:
                 r+=1
             elif s[l]!=t[r]:
                 r+=1
-        print(l,r)
         if l==(len(s)):
             return True
         return False
