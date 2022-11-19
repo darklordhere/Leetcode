@@ -1,5 +1,5 @@
 class Solution:
-    def complexNumberMultiply(self, a: str, b: str) -> str:
-        a1, a2 = map(int, a[:-1].split('+'))
-        b1, b2 = map(int, b[:-1].split('+'))
-        return '%d+%di' % (a1 * b1 - a2 * b2, a1 * b2 + a2 * b1)
+    def complexNumberMultiply(self, a1: str, b1: str) -> str:
+        a,b = map(int,a1[:-1].split("+"))
+        c,d = map(int,b1[:-1].split("+"))
+        return str(a*c-b*d)+"+"+str(a*d+b*c)+"i"
