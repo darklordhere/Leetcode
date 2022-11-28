@@ -1,16 +1,13 @@
 class Solution:
     def findWinners(self, m: List[List[int]]) -> List[List[int]]:
-        w = [] ; l = []
-        dp=defaultdict(int)
-
-        for i in m:
-            dp[i[1]]+=1
-        for i in m:
-            if i[0] not in dp: #O(1)
-                w.append(i[0])
-                
-        for i in m:
-            if dp[i[1]]==1:
-                l.append(i[1])
-        
-        return [sorted(set(w)),sorted(set(l))]
+        w = defaultdict(int) ; l = defaultdict(int) ; p = [] ; q = []
+        for i in range(len(m)):
+            w[m[i][0]]+=1
+            l[m[i][1]]+=1
+        m = max(max(w),max(l))
+        for i in range(m+1):
+            if ( i not in l ) and ( i in w ):
+                p.append(i)
+            if l[i] == 1:
+                q.append(i)
+        return [p,q]
