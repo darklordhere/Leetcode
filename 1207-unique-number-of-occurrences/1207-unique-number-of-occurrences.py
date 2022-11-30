@@ -1,7 +1,10 @@
 class Solution:
     def uniqueOccurrences(self, a: List[int]) -> bool:
         x = Counter(a)
-        l = []
+        l = set()
         for i,j in x.items():
-            l.append(j)
-        return sorted(l) == sorted(list(set(l)))
+            if j in l:
+                return False
+                break
+            l.add(j)
+        return True
