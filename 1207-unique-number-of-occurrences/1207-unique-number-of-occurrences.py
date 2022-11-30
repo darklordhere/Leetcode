@@ -5,6 +5,5 @@ class Solution:
         for i,j in x.items():
             if j in l:
                 return False
-                break
             l.add(j)
         return True
