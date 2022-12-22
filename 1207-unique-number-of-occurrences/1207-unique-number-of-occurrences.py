@@ -1,7 +1,8 @@
 class Solution:
-    def uniqueOccurrences(self, a: List[int]) -> bool:
-        x = Counter(a) ; l = set()
-        for i,j in x.items():
-            if j in l: return False
-            l.add(j)
+    def uniqueOccurrences(self, arr: List[int]) -> bool:
+        dic = {}
+        for i in arr:
+            if i in dic: dic[i] += 1
+            else: dic[i] = 1
+        if len(set(dic.values())) != len(set(arr)): return False
         return True
