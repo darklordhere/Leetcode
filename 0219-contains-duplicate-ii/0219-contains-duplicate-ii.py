@@ -1,8 +1,7 @@
 class Solution:
     def containsNearbyDuplicate(self, nums: List[int], k: int) -> bool:
-        dic = {}
-        for i, v in enumerate(nums):
-            if v in dic and i - dic[v] <= k:
-                return True
-            dic[v] = i
+        seen = dict()
+        for indx, val in enumerate(nums):
+            if indx - k <= seen.get(val,-k-1): return True
+            seen[val] = indx
         return False
