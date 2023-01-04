@@ -8,6 +8,5 @@ class Solution:
         
         res = ''
         for i in range(1, len(s)):
-            if s[:i] == s[-i:]:
-                res = s[:i]
+            if s[:i] == s[-i:]: res = s[:i]
         return res
