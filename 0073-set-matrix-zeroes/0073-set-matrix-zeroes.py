@@ -15,8 +15,7 @@ class Solution:
         for i in range(lr):
             for j in range(lc):
                 if m[i][j] == 0:
-                    r.add(i)
-                    c.add(j)
+                    r.add(i) ; c.add(j)
         for i in range(lr):
             for j in range(lc):
                 if i in r or j in c:
