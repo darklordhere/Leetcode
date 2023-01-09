@@ -6,6 +6,4 @@ class Solution:
             for j in x:
                 if sorted(j) not in l:
                     l.append(sorted(j))
-                else:
-                    pass
         return l
