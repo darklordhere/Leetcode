@@ -1,6 +1,6 @@
 class Solution:
     def increasingTriplet(self, n: List[int]) -> bool:
-        n1 = n2 = inf
+        n1 = n2 = float("inf")
         for i in n:
             if i <= n1:
                 n1 = i
