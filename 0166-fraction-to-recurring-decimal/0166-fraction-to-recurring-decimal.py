@@ -1,22 +1,11 @@
 class Solution:
-    def fractionToDecimal(self, numerator: int, denominator: int) -> str:
-        res = ''
-        if numerator*denominator<0:
-            res+='-'
-        numerator = abs(numerator)
-        denominator = abs(denominator)
-        res+= str(numerator//denominator)
-        carrier = numerator%denominator
-        if carrier>0:
-            res+='.'
-        memo = {}
-        while carrier>0:
-            if carrier in memo:
-                index = memo[carrier]
-                res = res[:index]+'('+res[index:] +')'
-                return res
-            else:
-                memo[carrier]=len(res)
-                res+=str((carrier*10)//denominator)
-                carrier = ((carrier*10)%denominator)
-        return res
+    def fractionToDecimal(self, n: int, d: int) -> str:
+        r = ''
+        if n*d<0: r+='-'
+        n = abs(n) ; d = abs(d) ; r+= str(n//d) ; c = n%d
+        if c>0: r+='.'
+        m = {}
+        while c>0:
+            if c in m: i = m[c] ; r = r[:i]+'('+r[i:] +')' ; return r
+            else: m[c]=len(r) ; r+=str((c*10)//d) ; c = ((c*10)%d)
+        return r
