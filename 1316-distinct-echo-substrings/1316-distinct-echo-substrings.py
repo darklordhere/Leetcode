@@ -1,10 +1,11 @@
 class Solution:
     def distinctEchoSubstrings(self, s: str) -> int:
-        return len({s[i:j] for j in range(len(s)) for i in range(j) if s[i:j]==s[j:j+j-i] })
+        return len({s[i:j] for j in range(len(s)) for i in range(j) if s.startswith(s[i:j],j)})
 
-
-
-
+    
+# or s.startswith(s[i:j],j) -----> s.startswith(value,starts,end)
+    
+    
 # class Solution:
 #     def distinctEchoSubstrings(self, s: str) -> int:
 #         c = 0
