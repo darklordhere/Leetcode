@@ -5,6 +5,5 @@ class Solution:
         # else: 
         #     for i in n:
         #         if i >= t: return n.index(i)
-
         return bisect.bisect_left(n,t)
         
