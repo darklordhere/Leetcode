@@ -8,6 +8,5 @@ class Solution:
                 st.pop()
                 if not st:
                     st.append(i)
-                else:
-                    m = max(m,i-st[-1])
+                else: m = max(m,i-st[-1])
         return m
