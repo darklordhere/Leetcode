@@ -6,7 +6,6 @@ class Solution:
                 st.append(i)
             else:
                 st.pop()
-                if not st:
-                    st.append(i)
+                if not st: st.append(i) 
                 else: m = max(m,i-st[-1])
         return m
