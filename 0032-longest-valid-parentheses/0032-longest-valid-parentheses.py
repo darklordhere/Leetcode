@@ -9,6 +9,5 @@ class Solution:
                 stack.pop()
                 if not stack :
                     stack.append(i)
-                else:
-                    m = max(m,i-stack[-1])
+                else: m = max(m,i-stack[-1])
         return m
