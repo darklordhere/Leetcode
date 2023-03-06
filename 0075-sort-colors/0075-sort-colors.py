@@ -18,5 +18,4 @@ class Solution:
             n.pop()
             f1(n)
             f2(n,x)
-            return n
         return f1(n)
