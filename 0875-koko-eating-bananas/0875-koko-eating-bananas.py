@@ -5,8 +5,6 @@ class Solution:
         while l <= r:
             m = (l + r)//2
             t = sum([-(-i//m) for i in p])
-            if t > h:
-                l = m + 1
-            else:
-                r = m - 1
+            if t > h: l = m + 1
+            else: r = m - 1
         return l
