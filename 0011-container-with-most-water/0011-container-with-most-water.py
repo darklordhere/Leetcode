@@ -4,7 +4,9 @@ class Solution:
         r = len(h)-1 ; m = 0
         while l < r:
             hl , hr = h[l] , h[r] ; c = min(hl,hr)*(r-l)
+            
             if c > m: m = c
+                
             if hl <= hr:
                 
                 l += 1
