@@ -7,7 +7,6 @@ class Solution:
         while c <= h:
             if people[c] + people[h] <= limit:
                 c += 1 ; h -= 1
-            else:
-                h -= 1
+            else: h -= 1
             boats += 1
         return boats
