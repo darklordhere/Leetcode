@@ -5,5 +5,6 @@ class Solution:
             c += i
             if c > m: 
                 m = c
-            if c < 0: c = 0
+            if c < 0: 
+                c = 0
         return m
