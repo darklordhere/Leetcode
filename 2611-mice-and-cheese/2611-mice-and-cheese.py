@@ -9,6 +9,8 @@ class Solution:
         l.sort(key=lambda j: j[0], reverse=True) ; 
         r = 0
         for p in range(ne):
+            
             if p < k: r += r1[l[p][1]]
+                
             else: r += r2[l[p][1]]
         return r
