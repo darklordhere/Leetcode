@@ -13,8 +13,7 @@ class Solution:
             if i == len(n)-1:
                 for i in range(i):
                     if n[i] > x:
-                        l.append(n[i])
-                        break
+                        l.append(n[i]);break
                 else:
                     l.append(-1)
             else:
