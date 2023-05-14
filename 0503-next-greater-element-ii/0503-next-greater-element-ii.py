@@ -3,10 +3,8 @@ class Solution:
         l = []
         ar = []
         for i in range(1,len(n)):
-            if n[i] > n[0]:
-                l.append(n[i]);break
-        else:
-            l.append(-1)
+            if n[i] > n[0]: l.append(n[i]);break
+        else: l.append(-1)
         for i in range(1,len(n)):
             x = n[i]
             if i == len(n)-1:
