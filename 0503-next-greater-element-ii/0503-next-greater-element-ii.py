@@ -9,10 +9,8 @@ class Solution:
             x = n[i]
             if i == len(n)-1:
                 for i in range(i):
-                    if n[i] > x:
-                        l.append(n[i]);break
-                else:
-                    l.append(-1)
+                    if n[i] > x: l.append(n[i]);break
+                else: l.append(-1)
             else:
                 ar[:] = n[i+1:]+n[:i]
                 for i in ar:
