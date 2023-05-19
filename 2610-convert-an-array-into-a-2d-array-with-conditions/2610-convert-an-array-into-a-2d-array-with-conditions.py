@@ -12,6 +12,8 @@ class Solution:
             for i in dic:
                 lis.append(i) ; dic[i] -= 1
                 if dic[i] == 0: tem.append(i)
+                    
             rr.append(lis)
+            
             for p in tem: del dic[p]
         return rr
