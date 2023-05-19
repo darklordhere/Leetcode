@@ -6,7 +6,9 @@ class Solution:
             else: dic[i] = 1
         rr = []
         while dic:
-            lis = [] ; tem = []
+            lis = [] ; 
+            
+            tem = []
             for i in dic:
                 lis.append(i) ; dic[i] -= 1
                 if dic[i] == 0: tem.append(i)
