@@ -1,10 +1,10 @@
 class Solution:
     def nextGreaterElements(self, n: List[int]) -> List[int]:
-        l = []
-        ar = []
+        l = [];ar = []
         for i in range(1,len(n)):
             if n[i] > n[0]:
-                l.append(n[i]);break
+                l.append(n[i]);
+                break
         else:
             l.append(-1)
         for i in range(1,len(n)):
