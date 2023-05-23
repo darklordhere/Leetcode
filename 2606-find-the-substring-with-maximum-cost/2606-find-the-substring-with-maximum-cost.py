@@ -3,7 +3,6 @@ class Solution:
         mf = float('-inf') ; jj = 0
         
         for i in range(sz):
-            
             jj += l[i]
             if mf < jj: mf = jj
                 
