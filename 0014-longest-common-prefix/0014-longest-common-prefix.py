@@ -10,9 +10,6 @@ class Solution:
             for i in strs:
                 if p == i[:len(p)]:
                     c+=1
-            r = p
-            p = p[:-1]
-        if x == c:
-            return r
-        else:
-            return ""
+            r = p ; p = p[:-1]
+        if x == c: return r
+        else: return ""
