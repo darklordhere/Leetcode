@@ -8,5 +8,6 @@ class Solution:
             for i in range(len(min(s[0],s[-1]))):
                 if s[0][i] != s[-1][i]: 
                     break
-                else: r += s[0][i]
+                else: 
+                    r += s[0][i]
             return r
