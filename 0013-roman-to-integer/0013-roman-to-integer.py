@@ -5,6 +5,5 @@ class Solution:
         for i in range(len(s)):
             if i+1 < len(s) and x[s[i]] < x[s[i+1]]: 
                 t -= x[s[i]]
-            else:
-                t += x[s[i]]
+            else: t += x[s[i]]
         return t
