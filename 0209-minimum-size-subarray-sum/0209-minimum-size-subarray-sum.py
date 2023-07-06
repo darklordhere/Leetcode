@@ -7,6 +7,5 @@ class Solution:
             s += val
             while s >= t:
                 s -= n[l]
-                ans = min(ans,r-l+1)
-                l += 1
+                ans = min(ans,r-l+1) ; l += 1
         return ans
