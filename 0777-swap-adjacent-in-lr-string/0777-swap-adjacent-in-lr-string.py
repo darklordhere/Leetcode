@@ -16,6 +16,5 @@ class Solution:
                 return False
             if e[j] == "R" and i > j: 
                 return False
-            i+=1
-            j+=1
+            i+=1 ; j+=1
         return True
