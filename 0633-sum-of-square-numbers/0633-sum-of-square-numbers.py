@@ -8,6 +8,5 @@ class Solution:
                 return True
             if (a**2 + b**2) < c:
                 a += 1
-            else:
-                b -= 1
+            else: b -= 1
         return False
