@@ -14,7 +14,6 @@ class Solution:
             if s[i] != e[j] : return False
             if s[i] == "L" and i < j:
                 return False
-            if e[j] == "R" and i > j: 
-                return False
+            if e[j] == "R" and i > j: return False
             i+=1 ; j+=1
         return True
