@@ -5,6 +5,5 @@ class Solution:
         else:
             x = 0
             while x != len(n):
-                if n[x] == t:
-                    return x
+                if n[x] == t: return x
                 x+=1
