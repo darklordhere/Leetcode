@@ -1,6 +1,6 @@
 class Solution:
     def validPalindrome(self, s: str) -> bool:
-        x,y = 0,len(s)-1
+        x,y = 0,len(s)-1;
         while x < y:
             if s[x] != s[y]: 
                 a,b = s[x:y],s[x+1:y+1];
