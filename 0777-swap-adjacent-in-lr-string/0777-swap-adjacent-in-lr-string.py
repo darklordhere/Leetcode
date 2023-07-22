@@ -6,7 +6,8 @@ class Solution:
         n = len(s)
         while i < n and j < n:
             if s[i] == "X":
-                i += 1;continue
+                i += 1;
+                continue
             if e[j] == "X":
                 j += 1
                 continue
