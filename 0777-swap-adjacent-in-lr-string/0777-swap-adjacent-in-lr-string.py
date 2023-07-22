@@ -11,7 +11,8 @@ class Solution:
             if e[j] == "X":
                 j += 1
                 continue
-            if s[i] != e[j] : return False
+            if s[i] != e[j] :
+                return False
             if s[i] == "L" and i < j:
                 return False
             if e[j] == "R" and i > j: return False
