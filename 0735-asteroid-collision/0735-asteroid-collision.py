@@ -7,5 +7,6 @@ class Solution:
                     s.pop()
                 if b >= -a: 
                     break
-            else: s.append(a)
+            else:
+                s.append(a)
         return s
