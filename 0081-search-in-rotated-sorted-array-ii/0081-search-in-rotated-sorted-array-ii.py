@@ -10,7 +10,7 @@ class Solution:
             n.sort()
             x,y = 0 , len(n)-1
             while x <= y:
-                m = x+(y-x)//2
+                m = (x+y)//2
                 if n[m] == t:
                     return True
                 elif n[m] > t:
