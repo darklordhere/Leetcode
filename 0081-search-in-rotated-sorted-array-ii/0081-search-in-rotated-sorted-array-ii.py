@@ -11,8 +11,7 @@ class Solution:
             x,y = 0 , len(n)-1
             while x <= y:
                 m = (x+y)//2
-                if n[m] == t:
-                    return True
+                if n[m] == t: return True
                 elif n[m] > t:
                     y = m - 1
                 else:
