@@ -3,8 +3,7 @@ class Solution:
         s = []
         for a in ast:
             while s and a < 0 < (b := s[-1]):
-                if b <= -a:s.pop()
-                if b >= -a: 
-                    break
+                if b <= -a: s.pop()
+                if b >= -a:break
             else: s.append(a)
         return s
