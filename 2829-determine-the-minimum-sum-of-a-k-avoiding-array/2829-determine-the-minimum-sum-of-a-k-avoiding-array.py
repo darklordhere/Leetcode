@@ -11,11 +11,9 @@ class Solution:
                         a += 1
                         break
             else:
-                print(a,b)
                 x[z] = a
                 a += 1
                 z += 1
                 b += 1
-        print(x)
         return sum(x)
             
