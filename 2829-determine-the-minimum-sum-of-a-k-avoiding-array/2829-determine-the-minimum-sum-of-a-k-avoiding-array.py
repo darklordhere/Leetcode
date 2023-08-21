@@ -13,7 +13,6 @@ class Solution:
             else:
                 x[z] = a
                 a += 1
-                z += 1
-                b += 1
+                z += 1;b += 1
         return sum(x)
             
