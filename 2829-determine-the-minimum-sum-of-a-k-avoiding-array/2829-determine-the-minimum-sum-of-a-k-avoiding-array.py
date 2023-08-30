@@ -12,7 +12,6 @@ class Solution:
                         break
             else:
                 x[z] = a
-                a += 1
-                z += 1;b += 1
+                a += 1; z += 1;b += 1
         return sum(x)
             
