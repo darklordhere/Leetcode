@@ -5,7 +5,7 @@
 #         self.next = next
 class Solution:
     def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
-        class ListNode:
+        class p:
             def __init__(self, x):
                 self.val = x
                 self.next = None
@@ -17,10 +17,11 @@ class Solution:
             b.append(str(l2.val))
             l2 = l2.next
         x = [int(i) for i in list(str(int(("".join(a))[::-1])+int(("".join(b))[::-1]))[::-1])]
-        def lst2link(lst):
-            cur = dummy = ListNode(0)
-            for e in lst:
-                cur.next = ListNode(e)
-                cur = cur.next
-            return dummy.next
-        return lst2link(x)
+        def list_to_lst(x):
+            c = d = p(0)
+            for i in x:
+                c.next = p(i)
+                c = c.next
+            return d.next
+        
+        return list_to_lst(x)
