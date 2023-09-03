@@ -20,8 +20,7 @@ class Solution:
         def list_to_lst(x):
             c = d = p(0)
             for i in x:
-                c.next = p(i)
-                c = c.next
+                c.next = p(i);c = c.next
             return d.next
         
         return list_to_lst(x)
