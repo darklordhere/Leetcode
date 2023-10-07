@@ -1,5 +1,7 @@
 class Solution:
     def generate(self, numRows: int) -> List[List[int]]:
+        
+        # binomial co-effiecient formula
         r = []
         for i in range(1,numRows+1):
             b = 1
@@ -9,7 +11,6 @@ class Solution:
                 b = b*(i-j)//j
             r.append(t)
         return r
-        
         
         
         # if numRows == 1:
