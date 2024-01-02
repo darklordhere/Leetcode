@@ -1,12 +1,10 @@
 class Solution:
     def smallestTrimmedNumbers(self, n: List[str], q: List[List[int]]) -> List[int]:
-
         x = []
         for i in q:
-            l = [int(j[len(j)-i[1]:]) for j in n]  
+            l = [int(j[len(j)-i[1]:]) for j in n] 
             m = sorted(l)[i[0]-1]
-            if l.count(m) < 2:
-                x.append(l.index(m))
+            if l.count(m) < 2: x.append(l.index(m))
             else:
                 p = [ i for i in range(len(l)) if l[i] == m]
                 x.append(p[i[0]-1-(sorted(l).index(m))])
