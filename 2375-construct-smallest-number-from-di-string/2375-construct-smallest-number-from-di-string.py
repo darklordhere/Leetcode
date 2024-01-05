@@ -1,10 +1,11 @@
 class Solution:
     def smallestNumber(self, p: str) -> str:
-        p += 'I'
-        r = s = ''
-        for i,p in enumerate(p):
-            s += str(i+1)
-            if p == 'I':
-                r += s[::-1]
-                s =''
+        p += "I"
+        t = ""
+        r = ""
+        for i,v in enumerate(p):
+            t += str(i+1)
+            if v == "I":
+                r += t[::-1]
+                t = ""
         return r
