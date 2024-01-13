@@ -8,7 +8,7 @@ class Solution:
         # return c
         
         # sol2
-        # return (Counter(s)-Counter(t)).total()
+        return (Counter(s)-Counter(t)).total()
         
         # sol3
-        return sum((Counter(s)-Counter(t)).values())
+        # return sum((Counter(s)-Counter(t)).values())
