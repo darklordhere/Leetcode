@@ -14,3 +14,13 @@ class Solution:
                 j += 1
                 i += 1
         return l
+        
+        # def fn(s):
+        #     c = dict()
+        #     for i in s:
+        #         if i not in c:
+        #             c[i] = 1
+        #         else:
+        #             c[i] += 1
+        #     return c
+        
