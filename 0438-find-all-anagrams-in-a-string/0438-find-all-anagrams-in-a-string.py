@@ -5,19 +5,19 @@ class Solution:
         pc = Counter(p)
         
         while j < len(s):
-#             x = s[i:j+1]
+            x = s[i:j+1]
             
-#             if len(x) < len(p):
-#                 j += 1
-#             elif len(x) == len(p):
-#                 if Counter(x) == pc:
-#                     l.append(i)
-#                 i,j=i+1,j+1
+            if len(x) < len(p):
+                j += 1
+            elif len(x) == len(p):
+                if Counter(x) == pc:
+                    l.append(i)
+                i,j=i+1,j+1
                 
-            x = s[i:j+len(p)]
+#             x = s[i:j+len(p)]
             
-            if Counter(x) == pc:
-                l.append(i)
-            i,j=i+1,j+1
+#             if Counter(x) == pc:
+#                 l.append(i)
+#             i,j=i+1,j+1
         return l
     
