@@ -5,7 +5,7 @@ class Solution:
         m = x/2
         heapify(nums)
         k = 0
-        while x > m :
+        while x > m:
             tmp = heappop(nums)
             x += tmp/2
             heappush(nums,tmp/2)
