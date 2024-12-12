@@ -6,7 +6,15 @@ class Solution:
         #     k -= 1
         # return sum(gifts)
         
+        nums = [-num for num in gifts]
+        heapify(nums)
         
+        while k:
+            tmp = math.isqrt(-heappop(nums))
+            heappush(nums, -tmp)
+            k -= 1
+            
+        return -sum(nums)
         
         
         l = [-i for i in gifts]
