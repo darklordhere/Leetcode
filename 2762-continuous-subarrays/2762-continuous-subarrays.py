@@ -18,6 +18,7 @@ class Solution:
         
         from sortedcontainers import SortedList
         sl = SortedList([])
+        
         nums.append(-5)
         start = 0
         sl.add(nums[start])
